@@ -14,6 +14,7 @@ namespace C48_G01_EXAM01_Version03.Classes.Exams
         public FinalExam(int examTime, int numberOfQuestions, Question[]? questions)
              : base(examTime, numberOfQuestions, questions, ExamType.Final)
         {
+
         }
         #endregion  
 
