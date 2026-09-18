@@ -33,7 +33,7 @@ namespace C48_G01_EXAM01_Version03.Classes.Subjects
                 if (int.TryParse(input, out int value) && value >= min && value <= max)
                     return value;
 
-                Console.WriteLine($"Please enter a number between {min} and {max}:");
+                Console.Write($"Please enter a number between {min} and {max}: ");
             }
         }
         private static double ReadPositiveDoubleMark()
@@ -44,7 +44,7 @@ namespace C48_G01_EXAM01_Version03.Classes.Subjects
                 if (double.TryParse(input, out double value) && value > 0)
                     return value;
 
-                Console.WriteLine("Please enter a valid positive number:");
+                Console.Write("Please enter a valid positive number: ");
             }
         }
         private static int ReadPositiveIntNumberOFQuestions()
@@ -55,7 +55,7 @@ namespace C48_G01_EXAM01_Version03.Classes.Subjects
                 if (int.TryParse(input, out int value) && value > 0)
                     return value;
 
-                Console.WriteLine("Please enter a valid positive number:");
+                Console.Write("Please enter a valid positive number: ");
             }
         }
 
@@ -120,14 +120,14 @@ namespace C48_G01_EXAM01_Version03.Classes.Subjects
 
         public void CreateExam()
         {
-            Console.WriteLine("Enter the type of exam (1 for Practical, 2 for Final):");
+            Console.Write("Enter the type of exam (1 for Practical, 2 for Final): ");
             int examTypeChoice = int.Parse(Console.ReadLine() ?? "2");
             ExamType examType = examTypeChoice == 1 ? ExamType.Practical : ExamType.Final;
 
-            Console.WriteLine("Please enter the time for the exam (30 to 180 minutes):");
+            Console.Write("Please enter the time for the exam (30 to 180 minutes): ");
             int examTime = ReadIntInRange(30, 180);
 
-            Console.WriteLine("Please enter the number of questions:");
+            Console.Write("Please enter the number of questions: ");
             int numberOfQuestions = ReadPositiveIntNumberOFQuestions();
 
             Console.Clear();
