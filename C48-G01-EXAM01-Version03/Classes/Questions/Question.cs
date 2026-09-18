@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace C48_G01_EXAM01_Version03.Questions
+namespace C48_G01_EXAM01_Version03.Classes.Questions
 {
     internal abstract class Question
     {
